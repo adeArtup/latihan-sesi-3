@@ -1,0 +1,46 @@
+24-02-2020
+
+Resume sesi 3
+
+#Class ES6
+
+paradigma code pembuatan class 	=> Fungsional  
+
+	       			=> Object oriented
+
+penamaan property class private menggunakan tanda '_' sesuai kaidah
+
+*inheritance = turunan sebuah class utama
+
+tidak bisa menurunkan lebih dari satu class
+
+
+Ada 2 cara import dan Run
+
+1.
+-- di file parent module.exports = xxxxx
+
+-- di file kedua requiere(xxxx)
+
+2. 
+-- menggunakan  fitur babel
+
+*Promise
+
+
+
+
+
+
+
+
+*New Promise
+
+
+
+
+
+
+
+
+
