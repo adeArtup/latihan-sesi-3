@@ -1,5 +1,4 @@
-// require('../node_modules/es6-promise').polyfill();
-// const makeAllCaps = require('../node_modules/isomorphic-fetch');
+// Async
 
 const arrayOfWords = ['cucumber','tomatos','avocado'];
 
@@ -7,15 +6,9 @@ const complicatedArray = ['cucumber',44, true];
 
 
 const makeAllCaps = function(text){
-        // return new Promise((res)=>{
             let arr = []
-            // for(let x =0;x<text.length;x++){
-            // text.forEach((t)=> {
-            //     console.log(t)
-            // });
                 
                 if(Number(text)){
-                    // arr.push(text)
                     arr = text
                 }else{
                    
@@ -23,11 +16,8 @@ const makeAllCaps = function(text){
                 }
             
             return arr ;
-            // }
          
 }
-
-// console.log(arrayOfWords.map(makeAllCaps))
 
 const sortWords = function(text){
         return new Promise((res)=>{
