@@ -19,6 +19,17 @@ const makeAllCaps = function(text){
          
 }
 
+// const makeAllCaps = function(text){
+//     let arr = []
+//     let value = text.map(this)
+//     return new Promise((res,rej)=>{
+
+//         console.log(value)
+        
+//     });   
+ 
+// }
+
 const sortWords = function(text){
         return new Promise((res)=>{
             res(text.sort())
@@ -26,33 +37,30 @@ const sortWords = function(text){
 }
 
 const maps = function(text){
-    return new Promise((res)=>{
-        res(text.map(makeAllCaps))
-    });   
+        return new Promise((res)=>{
+            res(text.map(makeAllCaps))
+        });   
 }
 
 maps(arrayOfWords)
-.then((val) => {
-  return sortWords(val)
-})
+.then(sortWords)
 .then((val) =>{
     console.log(val)
 })
 .catch(err => {
     console.log(err)
 });
-
 
 maps(complicatedArray)
-.then((val) => {
-  return sortWords(val)
-})
+.then(sortWords)
 .then((val) =>{
     console.log(val)
 })
 .catch(err => {
     console.log(err)
 });
+
+
 
 
 
